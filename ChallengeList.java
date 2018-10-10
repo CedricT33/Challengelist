@@ -38,7 +38,7 @@ public class ChallengeList {
    */
    public static boolean nonMonotone(String mot){
      int compteur = 0;
-    for (int i = 0; i < mot.length(); i++) {
+    for (int i = 0; i < mot.length()-1; i++) {
       if (mot.charAt(i) != mot.charAt(i+1)) {
         compteur ++;
       }
@@ -129,7 +129,7 @@ public class ChallengeList {
   * parcourt le tableau de noms et retourne une liste de tous les noms qui commencent par lettre
   **/
   public static String[] filtreLetter(String[] noms, char lettre){
-    
+    // TODO @B
     return null;
   }
 
