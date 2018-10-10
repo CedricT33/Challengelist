@@ -29,7 +29,7 @@ public class ChallengeListTest{
   }
 
   public static void testCaGele(){
-    // TODO @A
+    assertEquals("test ca gele", "ca caille", ChallengeList.caGele(3));
   }
 
   public static void testFiltreShort(){
@@ -71,6 +71,15 @@ public class ChallengeListTest{
     }
     else {
       throw new Error("\nKO!! >> "+message+" (exp : "+Arrays.toString(expected)+", res : "+Arrays.toString(res)+")");
+    }
+  }
+
+  public static void assertEquals(String message, String expected, String res){
+    if (expected.equals(res)) {
+      System.out.println("\nOK >> "+message);
+    }
+    else {
+      throw new Error("\nKO!! >> "+message+" (exp : "+expected+", res : "+res+")");
     }
   }
 

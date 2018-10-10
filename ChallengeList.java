@@ -87,16 +87,16 @@ public class ChallengeList {
      String gele;
 
      if (temperature >= -274 && temperature < 0) {
-       gele = "ça gèle";
+       gele = "ca gele";
      }
      else if (temperature >= 0 && temperature < 5) {
-       gele = "ça caille";
+       gele = "ca caille";
      }
      else if (temperature >= 5 && temperature <= 90) {
        gele = "RAS";
      }
      else if(temperature > 90) {
-       gele = "ça bouille";
+       gele = "ca bouille";
      }
      else {
        gele = "Erreur";
