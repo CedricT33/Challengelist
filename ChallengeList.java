@@ -3,7 +3,7 @@ public class ChallengeList {
   /**
   * retourne la moyenne de a et de b
   */
-  public static int moyenne(int a, int b){
+  public static double moyenne(int a, int b){
     return (a + b) / 2;
   }
 
@@ -11,8 +11,8 @@ public class ChallengeList {
   * retourn le perimetre d'un carre de cÃ´tÃ© a
   */
   public static int perimetreCarre(int a){
-    // TODO @B
-    return 0;
+    int carre = a * 4;
+    return carre;
   }
 
   /**
