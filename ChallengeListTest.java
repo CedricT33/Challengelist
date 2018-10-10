@@ -21,7 +21,7 @@ public class ChallengeListTest{
   }
 
   public static void testNonMonotone(){
-    // TODO @A
+    assertTrue("test non monotone", nonMonotone("AAAHAR"));
   }
 
   public static void testTarif(){
