@@ -9,7 +9,7 @@ public class ChallengeListTest{
 
 
   public static void testMoyenne(){
-    assertEquals(String message, double expected, double res)
+    assertEquals("test de la moyenne", double expected, double res)
   }
 
   public static void testPerimetreCarre(){
