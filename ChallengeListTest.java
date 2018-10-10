@@ -17,7 +17,7 @@ public class ChallengeListTest{
   }
 
   public static void testCommenceFini(){
-    // TODO @B
+    assertTrue("test commence fini", ChallengeList.commenceFini("KAYAK"));
   }
 
   public static void testNonMonotone(){
