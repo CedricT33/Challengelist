@@ -37,14 +37,18 @@ public class ChallengeList {
    * "AAAHAA" : true
    */
    public static boolean nonMonotone(String mot){
+     int compteur = 0;
     for (int i = 0; i < mot.length(); i++) {
-      if ((int)mot.charAt(i) != (int)mot.charAt(i+1)) {
-        return false;
-      } else {
-      return true;
+      if (mot.charAt(i) != mot.charAt(i+1)) {
+        compteur ++;
       }
     }
-    return true;
+    if (compteur == 0){
+      return false;
+    }
+    else {
+      return true;
+    }
   }
    /**
    * retourne le tarif associÃ© Ã  l'Ã¢ge :
