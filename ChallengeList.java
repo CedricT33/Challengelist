@@ -52,8 +52,20 @@ public class ChallengeList {
   * "erreur" si age nÃ©gatif
   **/
   public static String tarif(int age){
-    // TODO @A
-    return null;
+    String tarif;
+    if (age < 3){
+      tarif = "gratuit";
+    }
+    else if (age >= 3 && age <= 12){
+      tarif = "reduit";
+    }
+    else if (age < 0){
+      tarif = "erreur";
+    }
+    else {
+      tarif = "plein";
+    }
+    return tarif;
   }
 
   /**
