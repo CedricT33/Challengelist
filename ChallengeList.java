@@ -4,8 +4,7 @@ public class ChallengeList {
   * retourne la moyenne de a et de b
   */
   public static int moyenne(int a, int b){
-    // TODO @A
-    return 0;
+    return (a + b) / 2;
   }
 
   /**
@@ -21,8 +20,15 @@ public class ChallengeList {
   * ex "ABCDDFAB" : true
   */
   public static boolean commenceFini(String mot){
-    // TODO @A
-    return false;
+    char debut = mot.charAt(0);
+    char fin = mot.charAt(mot.length()-1);
+    if (debut == fin){
+      return true;
+    }
+    else {
+      return false;
+    }
+
   }
 
   /**
