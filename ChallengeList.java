@@ -40,10 +40,9 @@ public class ChallengeList {
     for (int i = 0; i < mot.length(); i++) {
       if ((int)mot.charAt(i) != (int)mot.charAt(i+1)) {
         return false;
-      } else {
-      return true;
       }
     }
+    return true;
   }
 
   /**
