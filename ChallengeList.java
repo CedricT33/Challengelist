@@ -87,16 +87,16 @@ public class ChallengeList {
      String gele;
 
      if (temperature >= -274 && temperature < 0) {
-       gele = "ca gele";
+       gele = "ça gèle";
      }
      else if (temperature >= 0 && temperature < 5) {
-       gele = "ca caille";
+       gele = "ça caille";
      }
      else if (temperature >= 5 && temperature <= 90) {
        gele = "RAS";
      }
      else if(temperature > 90) {
-       gele = "ca bouille";
+       gele = "ça bouille";
      }
      else {
        gele = "Erreur";
@@ -129,9 +129,12 @@ public class ChallengeList {
   * parcourt le tableau de noms et retourne une liste de tous les noms qui commencent par lettre
   **/
   public static String[] filtreLetter(String[] noms, char lettre){
-    // TODO @B
+
+    
+
     return null;
   }
+
 
 
   /**

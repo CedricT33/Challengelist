@@ -18,6 +18,7 @@ public class ChallengeListTest{
 
   public static void testCommenceFini(){
     assertTrue("test commence fini", ChallengeList.commenceFini("KAYAK"));
+    assertFalse("test commence fini", ChallengeList.commenceFini("KAYAU"))
   }
 
   public static void testNonMonotone(){
