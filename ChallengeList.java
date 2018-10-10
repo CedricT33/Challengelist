@@ -84,7 +84,7 @@ public class ChallengeList {
    **/
    public static String caGele(int temperature){
 
-     int gele;
+     String gele;
 
      if (temperature >= -274 && temperature < 0) {
        gele = "ça gèle";
