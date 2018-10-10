@@ -13,9 +13,7 @@ public class ChallengeListTest{
   }
 
   public static void testPerimetreCarre(){
-    int nombreTest = 2;
-    int nombreResultat = ChallengeList.perimetreCarre(nombreTest);
-    assertEquals("test du périmetre carré", 8, nombreResultat);
+    assertEquals("test du périmetre carré", 8, ChallengeList.perimetreCarre(2));
   }
 
   public static void testCommenceFini(){
@@ -23,7 +21,7 @@ public class ChallengeListTest{
   }
 
   public static void testNonMonotone(){
-    // TODO @A
+    assertTrue(String message, boolean res)
   }
 
   public static void testTarif(){
