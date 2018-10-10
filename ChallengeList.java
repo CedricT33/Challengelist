@@ -37,8 +37,11 @@ public class ChallengeList {
   * "AAAHAA" : true
   */
   public static boolean nonMonotone(String mot){
-    // TODO @B
-    return false;
+    for (int i = 1; i <= mot.length(); i++)
+      if ((int)mot.charAt(i-1) != (int)mot.charAt(i)) {
+        return false;
+      }
+      return true;
   }
 
   /**
