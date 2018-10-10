@@ -21,7 +21,7 @@ public class ChallengeListTest{
   }
 
   public static void testNonMonotone(){
-    assertTrue("test non monotone", nonMonotone("AAAHAR"));
+    assertTrue("test non monotone", ChallengeList.nonMonotone("AAAHAR"));
   }
 
   public static void testTarif(){
