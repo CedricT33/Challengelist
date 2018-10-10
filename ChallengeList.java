@@ -118,7 +118,7 @@ public class ChallengeList {
     String[] tableauResultat = new String[nombreEntrees];
     for (int i = 0; i < noms.length; i++){
       if (noms[i].length() > 2){
-        tableauResultat[increment]
+        tableauResultat[increment] = noms[i];
         increment++;
       }
     }

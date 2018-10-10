@@ -13,7 +13,9 @@ public class ChallengeListTest{
   }
 
   public static void testPerimetreCarre(){
-    // TODO @A
+    int nombreTest = 2;
+    int nombreResultat = ChallengeList.perimetreCarre(nombreTest);
+    assertEquals("test du périmetre carré", 8, nombreResultat);
   }
 
   public static void testCommenceFini(){
