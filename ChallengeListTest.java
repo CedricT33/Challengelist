@@ -37,7 +37,7 @@ public class ChallengeListTest{
   }
 
   public static void testFiltreLetter(){
-    // TODO @A
+    assertEquals("test filtre letter", {"Cedric", "Coco"}, ChallengeList.filtreLetter({"Cedric", "Yoyo", "Coco", "Tutu", "Kiki", "Sam"}, 'C'));
   }
 
 
