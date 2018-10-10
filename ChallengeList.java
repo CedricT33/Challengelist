@@ -32,17 +32,12 @@ public class ChallengeList {
   }
 
   /**
-  * retourne vrai si le mot contient des lettres diffÃ©rentes
+  * retourne vrai si le mot contient des lettres différentes
   * ex "AAAAAA" : false
   * "AAAHAA" : true
   */
   public static boolean nonMonotone(String mot){
-    for (int i = 0; i < mot.length(); i++) {
-      if ((int)mot.charAt(i) != (int)mot.charAt(i+1)) {
-        return false;
-      }
-    }
-    return true;
+
   }
 
   /**
@@ -78,33 +73,29 @@ public class ChallengeList {
   * "erreur" si la tempÃ©rature est infÃ©rieure Ã  -274
   **/
   public static String caGele(int temperature){
-
-    int gele;
-
-    if (temperature >= -274 && temperature < 0) {
-      gele = "Ã§a gÃ¨le";
-    }
-    else if (temperature >= 0 && temperature < 5) {
-      gele = "Ã§a caille";
-    }
-    else if (temperature >= 5 && temperature <= 90) {
-      gele = "RAS";
-    }
-    else if(temperature > 90) {
-      gele = "Ã§a bouille";
-    }
-    else {
-      gele = "Erreur";
-    }
-    return gele;
+    // TODO @B
+    return null;
   }
 
   /**
   * parcourt le tableau de noms et retourne une liste de tous les noms qui ont une longueur > 2
   **/
   public static String[] filtreShort(String[] noms){
-    // TODO @A
-    return null;
+    int nombreEntrees = 0;
+    int increment = 0;
+    for (int i = 0; i < noms.length; i++){
+      if (noms[i].length() > 2){
+        nombreEntrees++;
+      }
+    }
+    String[] tableauResultat = new String[nombreEntrees];
+    for (int i = 0; i < noms.length; i++){
+      if (noms[i].length() > 2){
+        tableauResultat[increment]
+        increment++;
+      }
+    }
+    return tableauResultat;
   }
 
   /**
