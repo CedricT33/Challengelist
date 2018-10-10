@@ -99,6 +99,28 @@ public class ChallengeList {
      }
      return gele;
    }
+
+  /**
+  * parcourt le tableau de noms et retourne une liste de tous les noms qui ont une longueur > 2
+  **/
+  public static String[] filtreShort(String[] noms){
+    int nombreEntrees = 0;
+    int increment = 0;
+    for (int i = 0; i < noms.length; i++){
+      if (noms[i].length() > 2){
+        nombreEntrees++;
+      }
+    }
+    String[] tableauResultat = new String[nombreEntrees];
+    for (int i = 0; i < noms.length; i++){
+      if (noms[i].length() > 2){
+        tableauResultat[increment]
+        increment++;
+      }
+    }
+    return tableauResultat;
+  }
+
   /**
   * parcourt le tableau de noms et retourne une liste de tous les noms qui commencent par lettre
   **/
