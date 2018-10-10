@@ -9,11 +9,13 @@ public class ChallengeListTest{
 
 
   public static void testMoyenne(){
-    // TODO @B
+    assertEquals(String message, double expected, double res)
   }
 
   public static void testPerimetreCarre(){
-    assertEquals("test du périmetre carré", 8, ChallengeList.perimetreCarre(2));
+    int nombreTest = 2;
+    int nombreResultat = ChallengeList.perimetreCarre(nombreTest);
+    assertEquals("test du périmetre carré", 8, nombreResultat);
   }
 
   public static void testCommenceFini(){
@@ -21,7 +23,7 @@ public class ChallengeListTest{
   }
 
   public static void testNonMonotone(){
-    assertTrue(String message, boolean res)
+    // TODO @A
   }
 
   public static void testTarif(){
