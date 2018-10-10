@@ -37,11 +37,13 @@ public class ChallengeList {
   * "AAAHAA" : true
   */
   public static boolean nonMonotone(String mot){
-    for (int i = 1; i <= mot.length(); i++)
-      if ((int)mot.charAt(i-1) != (int)mot.charAt(i)) {
+    for (int i = 0; i < mot.length(); i++) {
+      if ((int)mot.charAt(i) != (int)mot.charAt(i+1)) {
         return false;
-      }
+      } else {
       return true;
+      }
+    }
   }
 
   /**
@@ -77,8 +79,25 @@ public class ChallengeList {
   * "erreur" si la tempÃ©rature est infÃ©rieure Ã  -274
   **/
   public static String caGele(int temperature){
-    // TODO @B
-    return null;
+
+    int gele;
+
+    if (temperature >= -274 && temperature < 0) {
+      gele = "Ã§a gÃ¨le";
+    }
+    else if (temperature >= 0 && temperature < 5) {
+      gele = "Ã§a caille";
+    }
+    else if (temperature >= 5 && temperature <= 90) {
+      gele = "RAS";
+    }
+    else if(temperature > 90) {
+      gele = "Ã§a bouille";
+    }
+    else {
+      gele = "Erreur";
+    }
+    return gele;
   }
 
   /**
