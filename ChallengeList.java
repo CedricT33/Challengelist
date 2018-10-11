@@ -130,10 +130,14 @@ public class ChallengeList {
   **/
   public static String[] filtreLetter(String[] noms, char lettre){
 
-    
+    // besoin definir lettre comme celle desiree ???
 
-    return null;
-  }
+    for (int i = 0; i < noms.length; i++) {
+      String initial = noms.subString(0);
+      if ((char)initial == lettre) {
+        return noms[i];
+      }
+    }
 
 
 

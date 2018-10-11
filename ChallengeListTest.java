@@ -17,7 +17,7 @@ public class ChallengeListTest{
   }
 
   public static void testCommenceFini(){
-    assertTrue("test commence fini", ChallengeList.commenceFini("KAYAK"));
+    assertTrue("test commence fini", ChallengeList.commenceFini("KOALAKO"));
     assertFalse("test commence fini", ChallengeList.commenceFini("KAYAU"))
   }
 
@@ -26,15 +26,15 @@ public class ChallengeListTest{
   }
 
   public static void testTarif(){
-    // TODO @B
+    assertEquals("test tarif", "erreur", ChallengeList.tarif(-5));
   }
 
   public static void testCaGele(){
     assertEquals("test ca gele", "ca caille", ChallengeList.caGele(3));
   }
 
-  public static void testFiltreShort(){
-    // TODO @B
+  public static void testFiltreShort(){ //() ou {} pour attente plusieurs Strings ???
+    assertEquals("test filtre mot court", ("Dupond", "Smith", "Martin"), ChallengeList.filtreShort("Ya", "Dupont", "Smith", "S", "Mo", "Martin", "T");
   }
 
   public static void testFiltreLetter(){
