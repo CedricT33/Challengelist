@@ -17,8 +17,8 @@ public class ChallengeListTest{
   }
 
   public static void testCommenceFini(){
-    assertTrue("test commence fini", ChallengeList.commenceFini("KOALAKO"));
-    assertFalse("test commence fini", ChallengeList.commenceFini("KAYAU"))
+    assertTrue("test commence fini vrai", ChallengeList.commenceFini("KOALAKO"));
+    assertFalse("test commence fini faux", ChallengeList.commenceFini("KAYAU"));
   }
 
   public static void testNonMonotone(){
@@ -33,12 +33,16 @@ public class ChallengeListTest{
     assertEquals("test ca gele", "ca caille", ChallengeList.caGele(3));
   }
 
-  public static void testFiltreShort(){ //() ou {} pour attente plusieurs Strings ???
-    assertEquals("test filtre mot court", ("Dupond", "Smith", "Martin"), ChallengeList.filtreShort("Ya", "Dupont", "Smith", "S", "Mo", "Martin", "T");
+  public static void testFiltreShort(){
+    String[] tableauTest = {"Dupont", "Smith", "Martin"};
+    String[] tableauTeste = {"Ya", "Dupont", "Smith", "S", "Mo", "Martin", "T"};
+    assertEquals("test filtre mot court", tableauTest, ChallengeList.filtreShort(tableauTeste));
   }
 
   public static void testFiltreLetter(){
-    assertEquals("test filtre letter", {"Cedric", "Coco"}, ChallengeList.filtreLetter({"Cedric", "Yoyo", "Coco", "Tutu", "Kiki", "Sam"}, 'C'));
+    String[] tableauTest = {"Cedric", "Coco"};
+    String[] tableauTeste = {"Cedric", "Yoyo", "Coco", "Tutu", "Kiki", "Sam"};
+    assertEquals("test filtre letter", tableauTest, ChallengeList.filtreLetter(tableauTeste, 'C'));
   }
 
 

@@ -20,9 +20,10 @@ public class ChallengeList {
    * ex "ABCDDFAB" : true
    */
    public static boolean commenceFini(String mot){
-     char debut = mot.charAt(0);
-     char fin = mot.charAt(mot.length()-1);
-     if (debut == fin){
+     String debut = "" + mot.charAt(0) + mot.charAt(1);
+     String fin = "" + mot.charAt(mot.length()-2) + mot.charAt(mot.length()-1);
+
+     if (debut.equals(fin)){
        return true;
      }
      else {
@@ -59,7 +60,7 @@ public class ChallengeList {
    **/
    public static String tarif(int age){
      String tarif;
-     if (age < 3){
+     if (age > 0 && age < 3){
        tarif = "gratuit";
      }
      else if (age >= 3 && age <= 12){
@@ -87,16 +88,16 @@ public class ChallengeList {
      String gele;
 
      if (temperature >= -274 && temperature < 0) {
-       gele = "ça gèle";
+       gele = "ca gele";
      }
      else if (temperature >= 0 && temperature < 5) {
-       gele = "ça caille";
+       gele = "ca caille";
      }
      else if (temperature >= 5 && temperature <= 90) {
        gele = "RAS";
      }
      else if(temperature > 90) {
-       gele = "ça bouille";
+       gele = "ca bouille";
      }
      else {
        gele = "Erreur";
@@ -131,13 +132,22 @@ public class ChallengeList {
   public static String[] filtreLetter(String[] noms, char lettre){
 
     // besoin definir lettre comme celle desiree ???
-
-    for (int i = 0; i < noms.length; i++) {
-      String initial = noms.subString(0);
-      if ((char)initial == lettre) {
-        return noms[i];
+    int nombreEntrees = 0;
+    int increment = 0;
+    for (int i = 0; i < noms.length; i++){
+      if (noms[i].charAt(0) == lettre){ //verifie que l'initiale de chaque mot correspond ou pas à la lettre
+        nombreEntrees++;
       }
     }
+    String[] tableauResultat = new String[nombreEntrees];
+    for (int i = 0; i < noms.length; i++) {
+      if (noms[i].charAt(0) == lettre) {
+        tableauResultat[increment] = noms[i];
+        increment++;
+      }
+    }
+    return tableauResultat;
+  }
 
 
 
